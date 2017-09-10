@@ -1,11 +1,4 @@
-# skeleton for angular2 + bootstrap
-This skeleton is suitable for both those who want to use only angular (2 or 4) + bootstrap
 
-Both for those who want to use Sails, the most popular MVC framework for Node.js
-
-# Angular 4 crud example using Node JS REST API
-
-<img width="788" src="https://raw.githubusercontent.com/Giancarlo1974/SailsAngular/master/assets/images/demo.png" />
 
 This skeleton also contains an example of integration between Sails Api and Angular 4
 
