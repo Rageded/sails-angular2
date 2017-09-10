@@ -30,7 +30,7 @@ export class EmployeeService {
   addEmployeeWithPromise(employee: Employee): Promise<Employee> {
     let headers = new Headers({ 'Content-Type': 'application/json' });
     let options = new RequestOptions({ headers: headers });
-    return this.http.post(this.url + 'create', employee, options).toPromise()
+    return this.http.post(this.url + 'add', employee, options).toPromise()
       .then(this.extractData)
       .catch(this.handleErrorPromise);
   }
