@@ -13,8 +13,8 @@ export class EmployeeService {
 
   constructor(private http: Http) { }
 
-  //private url = 'http://localhost:1337/employee/';
-  private url = '/employee/';
+  private url = 'http://localhost:1337/employee/';
+  //private url = '/employee/';
   
   // Fetch all existing employees
   getEmployees(): Observable<Employee[]> {
@@ -30,6 +30,8 @@ export class EmployeeService {
   addEmployeeWithPromise(employee: Employee): Promise<Employee> {
     let headers = new Headers({ 'Content-Type': 'application/json' });
     let options = new RequestOptions({ headers: headers });
+    console.log('sending ');
+    console.log(employee);
     return this.http.post(this.url + 'add', employee, options).toPromise()
       .then(this.extractData)
       .catch(this.handleErrorPromise);

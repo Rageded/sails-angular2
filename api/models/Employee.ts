@@ -17,4 +17,5 @@ export class Employee  {
 	public fullname: string = '';
 	public emailid:string = '';
 	public phonenumber:string = '';
+	public createdAt: string = '';
 }

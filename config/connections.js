@@ -40,13 +40,28 @@ module.exports.connections = {
   * Run: npm install sails-mysql                                             *
   *                                                                          *
   ***************************************************************************/
-  // someMysqlServer: {
-  //   adapter: 'sails-mysql',
-  //   host: 'YOUR_MYSQL_SERVER_HOSTNAME_OR_IP_ADDRESS',
-  //   user: 'YOUR_MYSQL_USER', //optional
-  //   password: 'YOUR_MYSQL_PASSWORD', //optional
-  //   database: 'YOUR_MYSQL_DB' //optional
-  // },
+  someMysqlServer: {
+    adapter: 'sails-mysql',
+    // host: 'YOUR_MYSQL_SERVER_HOSTNAME_OR_IP_ADDRESS',
+    // user: 'YOUR_MYSQL_USER', //optional
+    // password: 'YOUR_MYSQL_PASSWORD', //optional
+    // database: 'YOUR_MYSQL_DB' //optional
+
+    module    : 'sails-mysql',
+    host      : 'localhost',
+    port      : 3306,
+    user      : 'edwin',
+    password  : '6GrJ8(aSKMqd',
+    database  : 'edwin',
+ 
+    // OR (explicit sets take precedence) 
+    // module    : 'sails-mysql',
+    // url       : 'mysql2://USER:mysqlcomp@HOST:PORT/DATABASENAME'
+ 
+    // Optional 
+    charset   : 'utf8',
+    collation : 'utf8_swedish_ci'
+  },
 
   /***************************************************************************
   *                                                                          *
@@ -56,14 +71,14 @@ module.exports.connections = {
   * Run: npm install sails-mongo                                             *
   *                                                                          *
   ***************************************************************************/
-  localMongoDb: {
-	adapter: 'sails-mongo',
-	host: 'localhost', // defaults to `localhost` if omitted 
-	port: 27017, // defaults to 27017 if omitted 
-	user: 'edwin', // or omit if not relevant 
-	password: 'edwin', // or omit if not relevant 
-	database: 'admin' // or omit if not relevant 
-  },
+ //  localMongoDb: {
+	// adapter: 'sails-mongo',
+	// host: 'localhost', // defaults to `localhost` if omitted 
+	// port: 27017, // defaults to 27017 if omitted 
+	// user: 'edwin', // or omit if not relevant 
+	// password: 'edwin', // or omit if not relevant 
+	// database: 'admin' // or omit if not relevant 
+ //  },
 
   /***************************************************************************
   *                                                                          *

@@ -29,7 +29,8 @@ module.exports = {
         sails.log.debug('Success', pippo);
 
         var employee = { fullname: 'abc', emailid: 'xyz@abc.com', phonenumber: '0000010000' };
-
+        console.log(' I am in the BACKEND');
+        
         EmployeeModel.create(employee).exec(function (err, result) {
 
             if (err) {
